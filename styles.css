@@ -1,0 +1,144 @@
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B4DEBD;
+}
+
+header{
+    background-color: #80A1BA;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 650px;
+}
+
+h1{
+    font-family: AudioWide, sans-serif;
+    font-size: 45px;
+}
+
+#darkmode{
+    font-family: AudioWide, sans-serif;
+    font-size: 24px;
+}
+
+nav{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+}
+
+.searchbar input{
+    width: 600px;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.searchbar input:focus{
+    outline: none;
+    border-color: #c3c9cf;
+    box-shadow: 0 0 5px rgba(195, 201, 207, 0.5);
+}
+
+.searchbar input::placeholder{
+    font-size: 16px;
+}
+
+.search-icon{
+    margin-left: -40px;
+    width: 25px;
+    height: 25px;
+}
+
+.filter{
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+.filter select{
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.filter select:hover{
+    background-color: #e3e3e3;
+    border-color: #c3c9cf;
+    box-shadow: 0 0 5px rgba(195, 201, 207, 0.5);
+    cursor: pointer;
+}
+
+.filter select option{
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.filter select:focus{
+    outline: none;
+    border-radius: 20px;
+    border-color: #c3c9cf;
+    box-shadow: 0 0 5px rgba(195, 201, 207, 0.5);
+}
+
+h2{
+    font-size: 35px;
+    margin-left: 100px;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #af8fbe;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 280px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card h3{
+    font-size: 28px;
+}
+.card p{
+    font-size: 18px;
+}
+.card-icon{
+    height: 150px;
+}
+
+footer{
+    background-color: #FFF7DD;
+    color: #000000;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 20px;
+}

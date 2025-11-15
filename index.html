@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of useful tools for your needs.">
+    <title>OFA-TOOLS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>OFA-TOOLS</h1>
+        <div class="darkmode">
+            <label for="darkModeToggle" id="darkmode">Dark Mode</label>
+            <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+        </div>
+    </header>
+    <nav>
+        <div class="searchbar">
+            <input type="text" id="searchInput" placeholder="Search" onkeyup="filterCards()">
+            <img src="assets/search.svg" alt="Search Icon" class="search-icon">
+        </div>
+        <div class="filter">
+            <label for="filterSelect">Category: </label>
+            <select id="filterSelect" onchange="filterCards()">
+                <option value="all">All Categories</option>
+                <option value="productivity">Productivity</option>
+                <option value="utility">Utility</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+        </div>
+    </nav>
+    <h2>All Utilites in one place</h2>
+    <main class="card-container">
+        <a href="Programs/calculator.html" class="card" data-category="">
+            <img src="assets/calculator.svg" alt="Calculator Icon" class="card-icon">
+            <h3 class="card-title">Calculator</h3>
+            <p class="card-description">A simple calculator for basic operations.</p>
+        </a>
+        <a href="Programs/calendar.html" class="card">
+            <img src="assets/calendar.svg" alt="Calendar Icon" class="card-icon">
+            <h3 class="card-title">Calendar</h3>
+            <p class="card-description">A simple calendar application.</p>
+        </a>
+        <a href="Programs/coin_flipper.html" class="card">
+            <img src="assets/coin_flipper.svg" alt="Coin Flipper Icon" class="card-icon">
+            <h3 class="card-title">Coin Flipper</h3>
+            <p class="card-description">A simple coin flipper tool.</p>
+        </a>
+        <a href="Programs/colorPicker.html" class="card">
+            <img src="assets/color.svg" alt="Color Picker Icon" class="card-icon">
+            <h3 class="card-title">Color Picker</h3>
+            <p class="card-description">A simple color picker tool.</p>
+        </a>
+        <a href="Programs/currency_converter.html" class="card">
+            <img src="assets/currency.svg" alt="Currency Converter Icon" class="card-icon">
+            <h3 class="card-title">Currency Converter</h3>
+            <p class="card-description">A simple currency converter tool.</p>
+        </a>
+        <a href="Programs/dice_roller.html" class="card">
+            <img src="assets/dice.svg" alt="Dice Roller Icon" class="card-icon">
+            <h3 class="card-title">Dice Roller</h3>
+            <p class="card-description">A simple dice roller tool.</p>
+        </a>
+        <a href="Programs/digital_clock.html" class="card">
+            <img src="assets/digital_clock.svg" alt="Digital Clock Icon" class="card-icon">
+            <h3 class="card-title">Digital Clock</h3>
+            <p class="card-description">A simple digital clock application.</p>
+        </a>
+        <a href="Programs/password_generator.html" class="card">
+            <img src="assets/password.svg" alt="Password Generator Icon" class="card-icon">
+            <h3 class="card-title">Password Generator</h3>
+            <p class="card-description">A simple password generator tool.</p>
+        </a>
+        <a href="Programs/qr_generator.html" class="card">
+            <img src="assets/qr.svg" alt="QR Code Generator Icon" class="card-icon">
+            <h3 class="card-title">QR Code Generator</h3>
+            <p class="card-description">A simple QR code generator tool.</p>
+        </a>
+        <a href="Programs/stopwatch.html" class="card">
+            <img src="assets/stopwatch.svg" alt="Stopwatch Icon" class="card-icon">
+            <h3 class="card-title">Stopwatch</h3>
+            <p class="card-description">A simple stopwatch tool.</p>
+        </a>
+        <a href="Programs/weather_app.html" class="card">
+            <img src="assets/weather.svg" alt="Weather App Icon" class="card-icon">
+            <h3 class="card-title">Weather App</h3>
+            <p class="card-description">A simple weather application.</p>
+        </a>
+        <a href="Programs/wordle.html" class="card">
+            <img src="assets/wordle.svg" alt="Wordle Icon" class="card-icon">
+            <h3 class="card-title">Wordle</h3>
+            <p class="card-description">A simple word guessing game.</p>
+        </a>
+    </main>
+    <footer>
+        <p>&copy; 2025 OFA-TOOLS. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
