@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <a href="/index.html">
+        <img src="back-icon.png" alt=""><p>Go back</p>
+    </a>
+    <h1>Calendar</h1>
+    <div class="calendarApp">
+        <h2>Calendar</h2>
+        <div id="calendarHeader">
+            <button onclick="prevMonth()">◀</button>
+            <span id="monthYear"></span>
+            <button onclick="nextMonth()">▶</button>
+        </div>
+        <table id="calendarTable">
+            <thead>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+                    <th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody"></tbody>
+        </table>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

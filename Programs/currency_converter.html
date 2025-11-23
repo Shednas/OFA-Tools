@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <a href="/index.html">
+        <img src="back-icon.png" alt=""><p>Go back</p>
+    </a>
+    <h1>Currency Converter</h1>
+    <div class="currencyConverter">
+        <p>Convert currencies easily and quickly.</p>
+        <form id="converter">
+            <fieldset>
+                <label for="amount"> Amount: </label>
+                <input type="number" id="amount" placeholder="Enter amount" />
+                <label for="from-currency"> From: </label>
+                <select id="fromCurrency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="NPR">NPR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <label for="to-currency"> To: </label>
+                <select id="toCurrency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="NPR">NPR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <button id="convertBtn" type="button" onclick="currencyConverter()">Convert</button>
+            </fieldset>
+        </form>
+        <div id="currencyResult">
+            <h2>Converted Amount:</h2>
+            <p id="convertedAmount"></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

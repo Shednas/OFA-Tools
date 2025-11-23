@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Finder</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <a href="/index.html">
+        <img src="back-icon.png" alt=""><p>Go back</p>
+    </a>
+    <h1>Pokemon Finder</h1>
+    <div class="pokemonFinder">
+        <h2>Enter the name of the Pokemon</h2>
+        <input type="text" placeholder="Search for a Pokemon" id="pokemonFinder">
+        <button id="searchButton" onclick="findPokemon()">Search</button>
+        <div id="pokemonCard">
+            <img id="pokemonImage" src="" alt="Pokemon Image" style="visibility:hidden;">
+           
+            <h3 id="pokemonIdName"></h3>
+            <p id="pokemonType"></p>
+            <p id="pokemonAbilities"></p>
+
+            <div class="pStats">
+                <h4 id="pokemonStatsTitle" style="visibility:hidden;">Stats</h4>
+                <ul>
+                    <li id="stat1" style="list-style: none;"></li>
+                    <li id="stat2" style="list-style: none;"></li>
+                    <li id="stat3" style="list-style: none;"></li>
+                    <li id="stat4" style="list-style: none;"></li>
+                    <li id="stat5" style="list-style: none;"></li>
+                    <li id="stat6" style="list-style: none;"></li>
+                </ul>
+                <p id="pokemonStats"></p>
+            </div>
+            
+            <p id="pokemonHeight"></p>
+            <p id="pokemonWeight"></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
